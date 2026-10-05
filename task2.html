@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Navigation Menu</title>
+
+    <style>
+        ul {
+
+            display: flex;
+            background-color: rgb(5, 5, 136);
+        }
+
+        a {
+            display: block;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            background-color: rgb(3, 3, 85);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>
