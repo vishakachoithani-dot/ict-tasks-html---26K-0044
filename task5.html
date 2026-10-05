@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5 Feedback Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9eef3;
+        }
+
+        form {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        .rating {
+            margin-top: 15px;
+        }
+
+        .rating label {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #656464;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h1>Feedback Form</h1>
+
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label>Feedback</label>
+        <textarea id="feedback" rows="5" placeholder="Write your feedback here..."></textarea>
+
+        <div class="rating">
+            <label>Rating:</label>
+
+            <label>
+                <input type="radio" name="rating" value="1"> 1
+            </label>
+
+            <label>
+                <input type="radio" name="rating" value="2"> 2
+            </label>
+
+            <label>
+                <input type="radio" name="rating" value="3"> 3
+            </label>
+
+            <label>
+                <input type="radio" name="rating" value="4"> 4
+            </label>
+
+            <label>
+                <input type="radio" name="rating" value="5"> 5
+            </label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
